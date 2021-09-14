@@ -50,6 +50,8 @@ function copyImage(srcImg: *, dstImg: *, srcPt: Point, dstPt: Point, size: Size,
         return dstImg;
     }
 
+    console.log('copyImage:', srcImg, dstImg, srcPt, dstPt, size, channels);
+
     if (size.width > srcImg.width ||
         size.height > srcImg.height ||
         srcPt.x > srcImg.width - size.width ||
